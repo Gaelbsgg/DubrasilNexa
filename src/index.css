@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-dark-950 text-gray-100;
+  font-feature-settings: "rlig" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar customizado */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-600 rounded-full hover:bg-primary-500;
+}
+
+/* Classe utilitária para gradientes sutis */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary-400 via-accent-DEFAULT to-primary-500 bg-clip-text text-transparent;
+}
+
+.gradient-glow {
+  @apply from-primary-500/20 via-transparent to-accent-500/20;
+}
+
+/* Micro-interações */
+.btn-base {
+  @apply px-6 py-3 rounded-xl font-semibold transition-all duration-300 ease-out;
+}
+
+.btn-primary {
+  @apply btn-base bg-gradient-to-r from-primary-500 to-primary-600 hover:shadow-glow text-white hover:from-primary-400 hover:to-primary-500 transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply btn-base border border-primary-500/30 text-primary-400 hover:border-primary-400 hover:text-primary-300 hover:bg-primary-500/5 transform hover:scale-105;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+/* Animações suaves */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Efeito de brilho de background */
+.bg-gradient-animation {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
