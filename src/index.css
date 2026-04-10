@@ -35,11 +35,11 @@ body {
 
 /* Classe utilitária para gradientes sutis */
 .gradient-text {
-  @apply bg-gradient-to-r from-primary-400 via-accent-DEFAULT to-primary-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-primary-400 via-accent to-primary-500 bg-clip-text text-transparent;
 }
 
 .gradient-glow {
-  @apply from-primary-500/20 via-transparent to-accent-500/20;
+  @apply from-primary-500/20 via-transparent to-accent/20;
 }
 
 /* Micro-interações */
