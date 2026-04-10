@@ -8,21 +8,31 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c3d66',
+          50: '#f3f0ff',
+          100: '#ede9fe',
+          200: '#ddd6fe',
+          300: '#c4b5fd',
+          400: '#a78bfa',
+          500: '#8b5cf6',
+          600: '#7c3aed',
+          700: '#6d28d9',
+          800: '#5b21b6',
+          900: '#4c1d95',
+        },
+        success: {
+          light: '#86efac',
+          DEFAULT: '#22c55e',
+          dark: '#16a34a',
         },
         accent: {
-          light: '#10b981',
-          DEFAULT: '#059669',
-          dark: '#047857',
+          light: '#fed7aa',
+          DEFAULT: '#fb923c',
+          dark: '#f97316',
+        },
+        warning: {
+          light: '#fca5a5',
+          DEFAULT: '#ef4444',
+          dark: '#dc2626',
         },
         dark: {
           50: '#f9fafb',
@@ -35,7 +45,7 @@ export default {
           700: '#374151',
           800: '#1f2937',
           900: '#111827',
-          950: '#030712',
+          950: '#0a1628',
         }
       },
       fontFamily: {
@@ -71,8 +81,8 @@ export default {
         'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
         'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
         'xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-        'glow': '0 20px 40px -10px rgba(14, 165, 233, 0.3)',
-        'glow-accent': '0 20px 40px -10px rgba(16, 185, 129, 0.3)',
+        'glow': '0 20px 40px -10px rgba(139, 92, 246, 0.3)',
+        'glow-accent': '0 20px 40px -10px rgba(34, 197, 94, 0.3)',
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',
